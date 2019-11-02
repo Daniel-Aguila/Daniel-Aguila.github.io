@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head >
-    {% load static %}
+    {% load static from staticfiles%}
 <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
     <meta charset="UTF-8">
     <title>Homepage</title>
@@ -9,7 +9,9 @@
 <body>
 <h1>HomePage</h1>
 
-<p>Welcome to the Homepage</p>
+<button>Log in</button>
+<button>Sign up</button>
+<button>Explore</button>
 {% for articles in articles%}
         <div class = "article">
         <h2><a href="#">{{ article.title }}</a></h2>
