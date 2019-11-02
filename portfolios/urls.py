@@ -22,4 +22,5 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.homepage),
+    path('portfolios/',views.portfolios)
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

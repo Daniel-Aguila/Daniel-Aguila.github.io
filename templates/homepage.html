@@ -9,5 +9,14 @@
 <body>
 <h1>HomePage</h1>
 <p>Welcome to the Homepage</p>
+<div class = "articles" >
+    {% for article in articlesStorage%}
+        <div class = "article">
+        <h2><a href="#">{{ article.title }}</a></h2>
+        <p>{{ article.body }}</p>
+        <p>{{ article.date }}</p>
+        </div>
+    {% endfor %}
+</div>
 </body>
 </html>
