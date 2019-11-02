@@ -3,8 +3,7 @@ from django.http import HttpResponse
 from .models import Article
 # Create your views here.
 def homepage(request):
-    articles = Article.objects.all().order_by("date")  # orders articles by date
-    return render(request,"homepage.html",{'articles':articles})
+    return render(request,"homepage.html")
 def portfolios(request):
     articles = Article.objects.all().order_by("date") #orders articles by date
     return render(request,"portfolios.html",{'articles':articles})
