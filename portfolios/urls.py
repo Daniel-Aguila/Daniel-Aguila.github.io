@@ -24,9 +24,14 @@ from . import views
 app_name = "portfolios"
 
 urlpatterns = [
+    path('',views.homepage, name="homepage"),
     path('admin/', admin.site.urls),
-    path('',views.homepage, name="portfolios"),
+    path('create/',views.portfolio_create, name="create"),
     path('signup/',views.signup_view, name="signup"),
+    path('login/',views.login_view, name="login"),
+    path('account/',views.account, name="account"),
+    path('logout',views.logout_view, name="logout"),
+
 ]
 
 urlpatterns += staticfiles_urlpatterns()
