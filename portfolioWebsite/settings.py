@@ -72,7 +72,7 @@ TEMPLATES = [
         },
     },
 ]
-
+#this is a comment
 WSGI_APPLICATION = 'portfolioWebsite.wsgi.application'
 
 
