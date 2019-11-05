@@ -1,7 +1,29 @@
-h1{
-    color: black;
-    background-color: hotpink;
+.logo {
+   position: absolute;
+    top:40%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 20%;
+    max-height: 100%;
 }
-button{
-    color: green;
+.homeLogin{
+    float: left;
+    position: absolute;
+    width: auto;
+    top: 45%;
+    left: 44.1%;
+}
+.homesignup{
+    float: left;
+    position: absolute;
+    width: auto;
+    top: 45%;
+    left: 48.3%;
+}
+.exploreButton{
+    float: left;
+    position: absolute;
+    width: auto;
+    top: 45%;
+    left: 53.0%;
 }

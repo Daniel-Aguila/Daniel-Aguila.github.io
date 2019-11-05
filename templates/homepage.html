@@ -1,18 +1,20 @@
+{% load static from staticfiles%}
+
 <!DOCTYPE html>
 <html lang="en">
 <head >
-    {% load static from staticfiles%}
 <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
     <!--If CSS doesn't update use CTRL+SHIFT+DEL on chrome to delete the cache-->
     <meta charset="UTF-8">
     <title>Homepage</title>
 </head>
 <body>
-<h1>HomePage</h1>
 
-<button><a href="{% url 'login' %}">Log in</a></button>
-<button><a href="{% url 'signup' %}">Sign up</a></button>
-<button>Explore</button>
+<img class='logo' src="/static/img/logo.png"/>
+
+<button class="homeLogin"><a href="{% url 'login' %}">Log in</a></button>
+<button class="homesignup"><a href="{% url 'signup' %}">Sign up</a></button>
+<button class="exploreButton">Explore</button>
 
 {% for articles in articles%}
         <div class = "article">
