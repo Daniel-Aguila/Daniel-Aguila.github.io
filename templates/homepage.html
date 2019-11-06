@@ -12,9 +12,11 @@
 
 <img class='logo' src="/static/img/logo.png"/>
 
+<div class="homepageButtons">
 <button class="homeLogin"><a href="{% url 'login' %}">Log in</a></button>
 <button class="homesignup"><a href="{% url 'signup' %}">Sign up</a></button>
 <button class="exploreButton">Explore</button>
+</div>
 
 {% for articles in articles%}
         <div class = "article">

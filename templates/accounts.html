@@ -1,15 +1,17 @@
 <!DOCTYPE html>
+{% load static from staticfiles%}
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="{% static 'css/accounts.css' %}">
     <meta charset="UTF-8">
     <title>accounts</title>
 </head>
 <body>
-<h1>Welcome to your account </h1>
+<h1 id="WelcomeUsername">Welcome {{ user.get_username }} </h1>
 
 <form class="logout-link" action="{% url 'logout' %}" method="POST">
     {% csrf_token %}
-    <button type="submit">Logout</button>
+    <button id="logoutButton" type="submit">Logout</button>
 </form>
 </body>
 </html>

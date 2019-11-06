@@ -7,13 +7,13 @@
     max-height: 100%;
 }
 .homeLogin{
-    float: left;
     position: absolute;
     width: auto;
     top: 45%;
     left: 44.1%;
 }
 .homesignup{
+    display: block;
     float: left;
     position: absolute;
     width: auto;

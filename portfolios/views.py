@@ -5,6 +5,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.contrib.auth import login
 from django.contrib.auth import logout as auth_logout
 from django.contrib.auth.decorators import login_required
+import getpass
 # Create your views here.
 def homepage(request):
     return render(request,"homepage.html")
@@ -45,7 +46,6 @@ def signup_view(request):
     return render(request,'signup.html',{'form':form})
 
 #Inside Account
-
 @login_required(login_url="login")
 def portfolio_create(request):
     return render(request,"portfolio_create.html")
