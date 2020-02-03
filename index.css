@@ -1,0 +1,55 @@
+.logo {
+   position: absolute;
+    top:40%;
+    left:50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 20%;
+    max-height: 100%;
+}
+.homeLogin{
+    position: absolute;
+    width: auto;
+    top: 45%;
+    left: 44.1%;
+}
+.homesignup{
+    display: block;
+    float: left;
+    position: absolute;
+    width: auto;
+    top: 45%;
+    left: 48.3%;
+}
+.exploreButton{
+    float: left;
+    position: absolute;
+    width: auto;
+    top: 45%;
+    left: 53.0%;
+}
+
+.typewriterHomeAnimation h1{
+    position: absolute;
+    left: 41.5%;
+    top: 50%;
+    overflow: hidden; /*Ensures content is not revealed until the animation */
+    border-right: .25em solid blue; /*typewriter cursor*/
+    white-space: nowrap; /*Keeps the content on a single line*/
+    margin: 0 auto; /*Gives scrolling effect*/
+    letter-spacing: .15em; /*letter spacing*/
+    display: inline-block;
+    font-size: 25px;
+    animation:
+            typing 3.5s steps(40,end),
+            blink-caret .50s step-end infinite;
+}
+
+@keyframes typing{
+    from {width: 0}
+    to {width: 16%}
+}
+
+@keyframes blink-caret {
+    from, to {border-color: red}
+    50% {border-color: blue}
+}
